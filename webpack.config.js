@@ -20,8 +20,8 @@ module.exports = {
         }
       },
       {
-        test: /\.jst$/,
-        loader: 'underscore-template-loader'
+        test: /\.handlebars$/,
+        loader: "handlebars-loader"
       },
       {
         test: /\.css$/,

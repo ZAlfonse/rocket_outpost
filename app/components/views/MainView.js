@@ -1,8 +1,10 @@
 import Marionette from 'backbone.marionette';
-import template from '../../templates/main.jst';
 
 import HomeView from './HomeView';
 import NavView from './NavView';
+import FooterView from './FooterView';
+
+import template from '../../templates/main.handlebars';
 
 export default Marionette.View.extend({
   template: template,
@@ -15,6 +17,6 @@ export default Marionette.View.extend({
   onRender: function() {
     this.showChildView('nav', new NavView());
     this.showChildView('content', new HomeView());
-    this.showChildView('footer', new NavView());
+    this.showChildView('footer', new FooterView());
   }
 });

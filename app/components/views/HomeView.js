@@ -1,6 +1,9 @@
 import Marionette from 'backbone.marionette';
-import template from '../../templates/home.jst';
+
+var template = require('../../templates/home.handlebars');
 
 export default Marionette.View.extend({
-  template: template
+  template: function(data) {
+    return template(data);
+  }
 });

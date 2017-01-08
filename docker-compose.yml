@@ -3,5 +3,7 @@ services:
   web:
     build: .
     command: start
+    volumes:
+      - ./app:/usr/src/rocketoutpost/app
     ports:
       - "8080:8080"
