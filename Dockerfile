@@ -18,4 +18,4 @@ COPY . /usr/src/rocketoutpost
 RUN npm run build
 
 # Entrypoints and stuff
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm"]
