@@ -1,7 +1,6 @@
-import Marionette from 'backbone.marionette';
+import Backbone from 'backbone';
 
-export default Marionette.Object.extend({
-  initialize: function(options) {
-    console.log(options.name);
-  }
+export default Backbone.Model.extend({
+  idAttribute: 'id',
+  urlRoot: 'http://localhost:8000/rt/user/',
 });
