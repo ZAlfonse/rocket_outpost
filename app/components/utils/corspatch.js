@@ -1,7 +1,7 @@
 import Backbone from 'backbone';
 
 export default function() {
-
+  
   var proxiedSync = Backbone.sync;
 
   Backbone.sync = function(method, model, options) {

@@ -1,4 +1,4 @@
-FROM node:6.6.0
+FROM node:7.4.0
 
 # Create workspace
 RUN mkdir -p /usr/src/rocketoutpost
