@@ -20,10 +20,10 @@ export default Marionette.View.extend({
     var user = new UserModel({id: 'me'});
     var self = this;
     user.fetch({
-      success: function(){
+      success: function() {
         self.showChildView('nav', new NavView({model: user}));
       },
-      error: function(){
+      error: function() {
         self.showChildView('nav', new NavView());
       }
     });
