@@ -17,3 +17,8 @@ footer.rocket-league-blue {
 .image-medium {
   width: 75%;
 }
+
+.container-wide {
+  width: 90%;
+  margin: 0 auto;
+}
