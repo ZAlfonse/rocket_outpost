@@ -8,7 +8,7 @@
     "url": "https://github.com/ZAlfonse/rocket_outpost"
   },
   "scripts": {
-    "start": "npm run build && webpack-dev-server --host 0.0.0.0 --content-base public/",
+    "start": "npm run build && webpack-dev-server --hot --host 0.0.0.0 --content-base public/",
     "prebuild": "rm -rf ./public/",
     "build": "npm run lint && webpack -p",
     "lint": "eslint app",
@@ -17,6 +17,7 @@
   "dependencies": {
     "backbone": "~1.3.3",
     "backbone.marionette": "~3.0.0",
+    "backbone.paginator": "~2.0.5",
     "jquery": "~1.12.2",
     "handlebars": "~4.0.6",
     "handlebars-loader": "~1.4.0"

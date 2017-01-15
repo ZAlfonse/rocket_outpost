@@ -17,7 +17,7 @@ export default Marionette.View.extend({
   },
 
   onRender: function() {
-    var user = new UserModel({id: 'me'});
+    var user = new UserModel({id: 'me/'});
     var self = this;
     user.fetch({
       success: function() {
